@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {margin: 0px; padding: 0px;}
+
+.bg-blue {
+  background-color: #233A95;
+}
+
+body {font-family: "Lato", sans-serif;font-size: 14px;}
+
+.headerwrapper .top-strip { padding: 8px 0px;}
+
+.container {max-width: 90%;}
+
+.headerwrapper .top-strip p {color: #ffffff;font-size: 12px;font-weight: 500;}
+
+.logowrapper img {width: 100%;}
+
+.headerwrapper .header { width: 100%;  height: auto;  padding: 25px 0px;}
+
+ .countryDrop span.ml-auto svg{opacity: 0.7;}
+
+.countryDrop {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Push icon to the right */
+  height: 60px;
+  width: 150px;
+  min-width: 150px;
+  color: #000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  border-radius: 7px !important;
+  padding: 10px 10px !important;
+  text-align: left !important;
+  font-size: 14px; /* Adjusted font size */
+}
+
+.countryDrop .info { display: flex; /* Align label and name properly */  flex-direction: column; /* Stack the text vertically */}
+
+.countryDrop .label {
+  font-size: 10px;
+  text-transform: capitalize !important;
+  line-height: 17px !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.countryDrop .name {
+  font-size: 12px;
+  text-transform: capitalize !important;
+  line-height: 20px !important;
+  color: rgba(0, 0, 0, 0.9) !important;
+  font-weight: 700;
+}
+
+.countryDrop span.ml-auto {
+  margin-left: auto; 
+  display: flex;
+  align-items: center; 
+  font-size: 16px; 
+  opacity: 0.7;
+}
+
+
+header .headerSearch {
+  width: 60%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px!important;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #F3F4F7;
+  position: relative;
+  
+}
+
+header .headerSearch button svg { font-size: 20px;margin-left: 50px; /*icon search to corner */}
+
+header .headerSearch input {
+  background: transparent!important;
+  outline: none!important;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border: 0px!important;
+  padding: 0px, 20px;
+}
+
+header .headerSearch button {
+   position: absolute;
+
+      top: 10px;
+      right: 15px; 
+  z-index: 100;
+  min-width: 40px!important;
+  height: 40px!important;
+  width: 100px!important;
+  border-radius: 50%!important;
+}
+
+header .part3 .circle {
+  align-items: center;
+  justify-content: center;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  border: 1px solid #f4f0f0;
+  color:#000;
+}
+
+header .part3 .circle svg {font-size: 20px;}
+
+.brand-description {  font-size: 13px;color: #3E445A; opacity: .5;}
+
+.cartTab .price {font-size: 18px;color:rgba(0, 0, 0, 0.7);font-weight: 700;}
+.cartTab button{background: #fff1ee;}
+
+.cartTab button svg{color:#ea2b0f;}
+.cartTab .count{position: absolute; top:-6px;right:-4px; background: #ea2b0f; border-radius: 50%;color:#fff; display: flex; height:20px;width:20px;}
+
+nav .allcartTab{
+  background: #2bbef9;
+  border-radius: 30px !important;
+  padding: 10px 15px !important;
+  color: #fff;
+}
+nav .allcartTab :hover{
+  background: #2b8bf9;
+}
+nav .allcartTab .text{
+  font-weight: 600;
+}
+nav .allcartTab .icon1 svg{
+  font-size: 20px;
+}
+nav .allcartTab .icon2 svg{
+  font-size: 15px;
+}
+nav .navPart2 ul li a{
+  color: #000;
+  font-size: 15px !important;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 9px 10px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+nav .navPart2 ul li a:hover{background:#f0faff;color:#2bbef9;}
+
+
+ .locationmodal .close1{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  height: 40px;
+  width: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+
+} 
+.locationmodal .MuiPaper-elevation{
+  padding: 25px;
+  position: relative;
+}
+.locationmodal .CountryList{
+margin-bottom:0px ;
+overflow-x:hidden;
+overflow-y: scroll;
+max-height: 400px;}
+.locationmodal .CountryList li{
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  }
+  .locationmodal .close1 svg{
+    font-size: 20px;
+  }
+  .locationmodal .CountryList li button{
+    width: 100%;
+    color: #000;
+    padding: 10px 20px;
+    justify-content: flex-start;
+  }
+  .headerSearch1  {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #F3F4F7;
+    border-radius: 10px;
+  
+  }
+  
+  .headerSearch1 .country-input{
+    background: transparent!important;
+    outline: none!important;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    border: 0px!important;
+  }
+  
+  .locationModal.countryList li button .active {background: #ccc;}
+  
+  draw header line 
+  .headerwrapper{
+    border-bottom: 1px solid rgba(0,0, 0, 0.1);
+    padding-bottom:10px ;
+  }
+  
+  /* drop down menu */
+  nav .navPart2 ul li {
+    position: relative; 
+}
+
+nav .navPart2 ul li .subMenu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    min-width: 200px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s, opacity 0.25s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+
+nav .navPart2 ul li:hover .subMenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav .navPart2 ul li .subMenu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .navPart2 ul li .subMenu a:hover {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+
+.catwrapper{position:relative}
+.catwrapper .sidebarnav{
+border:1px solid rgba(0,0,0,0.1);
+ width: 100%!important;
+height: auto!important;
+opacity:0;
+background:#fff;
+position:absolute;
+top: 165% !important;;
+transition:all 0.2s ease-in-out;
+visibility:hidden;
+z-index: 100;
+}
+.catwrapper .sidebarnav ul{
+  padding: 0px!important;
+  margin: 0px!important;
+}
+.catwrapper .sidebarnav ul li
+{
+  list-style: none!important;
+  position: static;
+  
+ 
+ 
+}
+
+.catwrapper .sidebarnav ul li button{
+width: 100%!important;
+
+
+}
+.catwrapper .sidebarnav ul li button svg{
+  font-size: 15px!important;
+  opacity: 0.5;
+  margin-right: 10px!important;
+color: #3E445A;
+
+}
+.catwrapper .sidebarnav ul li button a{
+  display:flex!important;
+  align-items: center;
+width: 100% !important;
+text-decoration: none!important;  
+font-size: 15px;
+color: rgba(0, 0, 0, 0.6)!important;
+text-transform:capitalize!important;
+}
+
+.catwrapper .sidebarnav.open
+{
+height:auto;
+opacity:1;
+visibility:inherit;
+
+}
+
+
+
+.catwrapper .sidebarnav ul li button:hover
+{
+background:rgba(0, 0, 0, 0.1)!important;
+} 
+
+.catwrapper .sidebarnav ul li .submenu{
+  position:absolute!important;
+  top: 0px;
+  left: 317px!important;
+  background:#fff;
+  width: 250px!important;
+  height: auto;
+  padding: 20px;
+  /* border-radius: 10px; */
+  z-index: 100!important;
+  visibility: hidden!important;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.catwrapper .sidebarnav ul li:hover .submenu{
+  z-index: 100!important;
+  visibility:inherit!important;
+  opacity: 1;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.cursor{
+  cursor:pointer
+}
+
+.text-light{
+  color:#8b8b8b;
+  font-size: 12px,
+}
+
+.homeProducts{
+  padding:25px;
+  width: 100%;
+}
+
+.homeProducts .banner{
+  overflow: hidden;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.productRow .hd{
+
+}
+
+.viewAllBtn{
+  text-transform: capitalize !important;
+  padding: 5px 15px;
+  background: #fff;
+  color:grey;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.viewAllBtn svg{
+  font-size: 20px;
+}
+
+.productItem{
+  width: 100%;
+  height: auto;
+}

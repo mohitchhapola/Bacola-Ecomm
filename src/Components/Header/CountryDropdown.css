@@ -1,0 +1,58 @@
+/* .country-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.popup-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.popup-item:last-child {
+    border-bottom: none;
+}
+
+.country-name {
+    font-weight: bold;
+}
+
+.min-order-value {
+    color: #888;
+} */
