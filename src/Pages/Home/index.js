@@ -6,6 +6,13 @@ import product2 from "../../Assets/Images/product2.jpg"
 import product3 from "../../Assets/Images/product3.webp"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
+import ProductBanner from '../../Components/product/ProductBanner'
 
 function Home(){
     return (
@@ -30,12 +37,28 @@ function Home(){
                         <Swiper
         slidesPerView={3}
         spaceBetween={30}
+        loop={true}
         pagination={{
           clickable: true,
         }}
-        // modules={[Pagination]}
+        navigation={true}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
       >    
+      <SwiperSlide>
+        <ProductBanner/>
+      </SwiperSlide>
+      <SwiperSlide><div className="item productItem">
+                            <div className="imageWrapper">
+                                <img src={product2} alt="product image" className='w-100'/>
+                            </div>
+                        </div></SwiperSlide>
+      <SwiperSlide><div className="item productItem">
+                            <div className="imageWrapper">
+                                <img src={product3} alt="product image" className='w-100'/>
+                            </div>
+                        </div></SwiperSlide>
+                        
       <SwiperSlide><div className="item productItem">
                             <div className="imageWrapper">
                                 <img src={product1} alt="product image" className='w-100'/>
