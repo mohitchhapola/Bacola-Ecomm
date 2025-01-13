@@ -5,7 +5,7 @@ import Header from './Components/Header';
 import Home from './Pages/Home';
 import {createContext,useState,useEffect}from 'react'
 import axios from'axios'
-
+import Footer from './Components/footer/'
 const MyContext =createContext()
 
 
@@ -37,6 +37,7 @@ function App() {
       
         <Header/>
         <Home/>
+        <Footer/>
         <Routes>
           <Route element={<Home/>} exact={true} path='{/}'/>
         </Routes>

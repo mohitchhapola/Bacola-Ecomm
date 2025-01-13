@@ -1,10 +1,12 @@
 import React from 'react'
 import banner from '../../Assets/Images/banner-box.jpg'
 import { IoIosArrowRoundForward } from "react-icons/io"
-import product1 from "../../Assets/Images/product1.webp"
 import product2 from "../../Assets/Images/product2.jpg"
 import product3 from "../../Assets/Images/product3.webp"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import product1 from "../../Assets/Images/product1.webp"
+import { TfiFullscreen } from "react-icons/tfi";
+import { IoMdHeartEmpty } from "react-icons/io";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -47,35 +49,160 @@ function Home(){
       >    
       <SwiperSlide>
         <ProductBanner/>
-      </SwiperSlide>
-      <SwiperSlide><div className="item productItem">
-                            <div className="imageWrapper">
-                                <img src={product2} alt="product image" className='w-100'/>
-                            </div>
-                        </div></SwiperSlide>
-      <SwiperSlide><div className="item productItem">
-                            <div className="imageWrapper">
-                                <img src={product3} alt="product image" className='w-100'/>
-                            </div>
-                        </div></SwiperSlide>
-                        
-      <SwiperSlide><div className="item productItem">
-                            <div className="imageWrapper">
-                                <img src={product1} alt="product image" className='w-100'/>
-                            </div>
-                        </div></SwiperSlide>
-      <SwiperSlide><div className="item productItem">
-                            <div className="imageWrapper">
-                                <img src={product2} alt="product image" className='w-100'/>
-                            </div>
-                        </div></SwiperSlide>
-      <SwiperSlide><div className="item productItem">
-                            <div className="imageWrapper">
-                                <img src={product3} alt="product image" className='w-100'/>
-                            </div>
-                        </div></SwiperSlide>
-                        
-                        </Swiper>
+      </SwiperSlide>                        
+      <SwiperSlide>
+      <div className="item productItem">
+                  <div className="imageWrapper">
+                    <img
+                      src={product2}className="w-100" alt="">
+
+                      </img>
+
+
+                  </div>
+                  <span className="badge bg-primary">25%</span>
+
+                  <div className="action">
+                    <button><TfiFullscreen /></button>
+                    <button><IoMdHeartEmpty /></button>
+                  </div>
+                  <div className="productInfo">
+                    <h6 className="text-aligns-center">All Natural Italian-Style Chicken Meatballs</h6>
+                    <div className="info">
+                  <div className="d-flex">
+                  <span className="oldprice">$20.00</span>
+                  <span className="newprice">$15.00</span>
+                  </div>
+                <span className="text-sucess d-block">In Stock</span>
+                    {/* <Stack spacing={1}> */}
+                      <Rating
+                        name="half-rating-read"
+                        size="small"
+                        defaultValue={2.5}
+                        precision={0.5}
+                        readOnly
+                      />
+                   
+                    {/* </Stack> */}
+                    </div>
+                  </div>
+                </div>
+      </SwiperSlide>                        
+      <SwiperSlide>
+      <div className="item productItem">
+                  <div className="imageWrapper">
+                    <img
+                      src={product3}className="w-100" alt="">
+
+                      </img>
+
+
+                  </div>
+                  <span className="badge bg-primary">25%</span>
+
+                  <div className="action">
+                    <button><TfiFullscreen /></button>
+                    <button><IoMdHeartEmpty /></button>
+                  </div>
+                  <div className="productInfo">
+                    <h6 className="text-aligns-center">All Natural Italian-Style Chicken Meatballs</h6>
+                    <div className="info">
+                  <div className="d-flex">
+                  <span className="oldprice">$20.00</span>
+                  <span className="newprice">$15.00</span>
+                  </div>
+                <span className="text-sucess d-block">In Stock</span>
+                    {/* <Stack spacing={1}> */}
+                      <Rating
+                        name="half-rating-read"
+                        size="small"
+                        defaultValue={2.5}
+                        precision={0.5}
+                        readOnly
+                      />
+                   
+                    {/* </Stack> */}
+                    </div>
+                  </div>
+                </div>
+      </SwiperSlide>                        
+      <SwiperSlide>
+      <div className="item productItem">
+                  <div className="imageWrapper">
+                    <img
+                      src={product1}className="w-100" alt="">
+
+                      </img>
+
+
+                  </div>
+                  <span className="badge bg-primary">25%</span>
+
+                  <div className="action">
+                    <button><TfiFullscreen /></button>
+                    <button><IoMdHeartEmpty /></button>
+                  </div>
+                  <div className="productInfo">
+                    <h6 className="text-aligns-center">All Natural Italian-Style Chicken Meatballs</h6>
+                    <div className="info">
+                  <div className="d-flex">
+                  <span className="oldprice">$20.00</span>
+                  <span className="newprice">$15.00</span>
+                  </div>
+                <span className="text-sucess d-block">In Stock</span>
+                    {/* <Stack spacing={1}> */}
+                      <Rating
+                        name="half-rating-read"
+                        size="small"
+                        defaultValue={2.5}
+                        precision={0.5}
+                        readOnly
+                      />
+                   
+                    {/* </Stack> */}
+                    </div>
+                  </div>
+                </div>
+      </SwiperSlide>                        
+      <SwiperSlide>
+      <div className="item productItem">
+                  <div className="imageWrapper">
+                    <img
+                      src={product1}className="w-100" alt="">
+
+                      </img>
+
+
+                  </div>
+                  <span className="badge bg-primary">25%</span>
+
+                  <div className="action">
+                    <button><TfiFullscreen /></button>
+                    <button><IoMdHeartEmpty /></button>
+                  </div>
+                  <div className="productInfo">
+                    <h6 className="text-aligns-center">All Natural Italian-Style Chicken Meatballs</h6>
+                    <div className="info">
+                  <div className="d-flex">
+                  <span className="oldprice">$20.00</span>
+                  <span className="newprice">$15.00</span>
+                  </div>
+                <span className="text-sucess d-block">In Stock</span>
+                    {/* <Stack spacing={1}> */}
+                      <Rating
+                        name="half-rating-read"
+                        size="small"
+                        defaultValue={2.5}
+                        precision={0.5}
+                        readOnly
+                      />
+                   
+                    {/* </Stack> */}
+                    </div>
+                  </div>
+                </div>
+      </SwiperSlide>                        
+    </Swiper>
                     </div>
                     </div>
                     </div>
